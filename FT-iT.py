@@ -12,8 +12,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 from iTransformer.core import fretime_iTransformer
 from sklearn.metrics import mean_absolute_percentage_error
 
-seed = random.randint(0, 2 ** 31 - 1)
-print('seed', seed)
+seed = 'seed'
 UseWTConv = False
 UseTCN = True
 UseFrequency = True
@@ -278,3 +277,4 @@ if __name__ == "__main__":
     savef['MAPE'] = [str(MAPE)]
     savef['R2'] = [str(R2)]
     savef.to_csv(road)
+
